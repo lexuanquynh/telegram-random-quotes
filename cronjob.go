@@ -36,7 +36,7 @@ func main() {
 func callURL(message string) {
 	// get http with message param
 	if message != "" {
-		resp, err := http.Get("https://api.telegram.org/bot5520678085:AAE/sendMessage?chat_id=-1001880226194&text=" + message + "&parse_mode=markdown")
+		resp, err := http.Get("https://api.telegram.org/bot5:AAEO/sendMessage?chat_id=-100ABC&text=" + message + "&parse_mode=markdown")
 		if err != nil {
 			log.Fatalln(err)
 		}

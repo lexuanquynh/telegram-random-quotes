@@ -1,5 +1,9 @@
 # telegram-random-quotes
 
+## Get telegram-bot 
+```bash
+https://telegram.me/BotFather
+```
 ## build
 ```bash
 GOOS=linux GOARCH=amd64 go build /Volumes/Data/coding/golang/cronJobProject/cronjob.go
