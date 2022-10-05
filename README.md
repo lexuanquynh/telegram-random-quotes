@@ -5,6 +5,8 @@ How it work:
 
 <img src="sample.png" width="800">
 
+Thanks for the random quote on the [zenquotes](https://zenquotes.io/api/random) API.
+
 ## Get telegram-bot 
 ```bash
 https://telegram.me/BotFather
