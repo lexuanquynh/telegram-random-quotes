@@ -6,7 +6,7 @@ GOOS=linux GOARCH=amd64 go build /Volumes/Data/coding/golang/cronJobProject/cron
 ```
 ## upload to host:
 ```bash
-scp cronjob root@163.44.206.132:/usr/local/src/telegram-bot/
+scp cronjob root@ipaddress:/usr/local/src/telegram-bot/
 ```
 ## create service:
 ```bash
