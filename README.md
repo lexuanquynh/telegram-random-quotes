@@ -3,7 +3,7 @@
 ## About
 How it work:
 
-<img src="image.png" width="500">
+<img src="image.png" width="800">
 
 ## Get telegram-bot 
 ```bash
