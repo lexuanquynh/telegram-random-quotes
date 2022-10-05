@@ -6,11 +6,11 @@ https://telegram.me/BotFather
 ```
 ## build
 ```bash
-GOOS=linux GOARCH=amd64 go build /Volumes/Data/coding/golang/cronJobProject/cronjob.go
+GOOS=linux GOARCH=amd64 go build <your parth of project>/cronJobProject/cronjob.go
 ```
 ## upload to host:
 ```bash
-scp cronjob root@ipaddress:/usr/local/src/telegram-bot/
+scp cronjob root@your_ipaddress:/usr/local/src/telegram-bot/
 ```
 ## create service:
 ```bash
