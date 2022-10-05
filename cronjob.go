@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"github.com/go-co-op/gocron"
+	"github.com/hashicorp/go-hclog"
 	"log"
 	"net/http"
 	"time"
@@ -35,7 +36,7 @@ func main() {
 func callURL(message string) {
 	// get http with message param
 	if message != "" {
-		resp, err := http.Get("https://api.telegram.org/bot5520678085:AA/sendMessage?chat_id=-1001880226194&text=" + message + "&parse_mode=markdown")
+		resp, err := http.Get("https://api.telegram.org/bot5520678085:AAE/sendMessage?chat_id=-1001880226194&text=" + message + "&parse_mode=markdown")
 		if err != nil {
 			log.Fatalln(err)
 		}
@@ -68,4 +69,14 @@ func getQuote() string {
 type Quote struct {
 	Q string `json:"q"`
 	A string `json:"a"`
+}
+
+// NewLogger returns a new logger instance
+func NewLogger() hclog.Logger {
+	logger := hclog.New(&hclog.LoggerOptions{
+		Name:  "user-auth-service",
+		Level: hclog.LevelFromString("DEBUG"),
+	})
+
+	return logger
 }
