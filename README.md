@@ -41,3 +41,7 @@ sudo systemctl start telegram_bot.service
 sudo systemctl enable telegram_bot.service
 sudo systemctl status telegram_bot.service
 ```
+
+# LICENSE
+This project under MIT license. 
+You're free to use it.
