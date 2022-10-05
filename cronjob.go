@@ -36,7 +36,7 @@ func main() {
 func callURL(message string) {
 	// get http with message param
 	if message != "" {
-		resp, err := http.Get("https://api.telegram.org/<YOUR_BOT_ADDRESS>/sendMessage?chat_id=-100ABC&text=" + message + "&parse_mode=markdown")
+		resp, err := http.Get("https://api.telegram.org/<YOUR_BOT_ADDRESS>/sendMessage?chat_id=-100<YOUR_GROUP_ID>&text=" + message + "&parse_mode=markdown")
 		if err != nil {
 			log.Fatalln(err)
 		}
@@ -74,7 +74,7 @@ type Quote struct {
 // NewLogger returns a new logger instance
 func NewLogger() hclog.Logger {
 	logger := hclog.New(&hclog.LoggerOptions{
-		Name:  "user-auth-service",
+		Name:  "telegram-bot-service",
 		Level: hclog.LevelFromString("DEBUG"),
 	})
 
