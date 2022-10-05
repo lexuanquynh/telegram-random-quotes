@@ -1,5 +1,10 @@
 # telegram-random-quotes
 
+## About
+How it work:
+
+<img src="image.png" width="500">
+
 ## Get telegram-bot 
 ```bash
 https://telegram.me/BotFather
