@@ -37,25 +37,3 @@ sudo systemctl start telegram_bot.service
 sudo systemctl enable telegram_bot.service
 sudo systemctl status telegram_bot.service
 ```
-
-## create service
-```bash
-vi /etc/nginx/sites-available/telegram_bot
-```
-then add this code
-```azure
-server {
-        listen 80;
-
-        location /dev {
-                proxy_pass http://127.0.0.1:8081/api/v1;
-                proxy_set_header Host $host;
-                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        }
-         location /production {
-                proxy_pass http://127.0.0.1:8082/api/v1;
-                proxy_set_header Host $host;
-                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        }
-}
-```
