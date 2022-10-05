@@ -48,5 +48,5 @@ sudo systemctl status telegram_bot.service
 ```
 
 # LICENSE
-This project is licensed under [MIT license](https://github.com/lexuanquynh/telegram-random-quotes/blob/main/LICENSE). 
+This project is licensed under the [MIT license](https://github.com/lexuanquynh/telegram-random-quotes/blob/main/LICENSE). 
 You're free to use it.
